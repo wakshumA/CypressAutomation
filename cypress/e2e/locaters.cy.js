@@ -20,6 +20,18 @@ describe('Find or Get Elememts by using Differnet Locators', () => {
         expect(item).to.have.attr("type");
        })
     })
+
+    //by attribure name 
+    cy.get('[type]');
+
+    //by class name
+    cy,get('.btn.bt-primary')
+
+    //by id
+    cy,get('#wooden_spoon');
+
+    //If I want to use text: no xpath in cypress, but it still possible with a different approach
+    cy.get('button').should('contain','login').click();
   
 
 })
